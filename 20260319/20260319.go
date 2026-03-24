@@ -41,7 +41,8 @@ func main() {
 		fmt.Println("解析 JSON 失败: ", err)
 		return
 	}
-	fmt.Printf("解析后的 Pod 信息: \n名称: %s\n命名空间: %s\n状态: %s\nPod 的 CPU: %s\nPod 的 Memory: %s\n", pod.Name, pod.Namespace, pod.Status, pod.CPU, pod.Memory)
+	fmt.Printf("解析后的 Pod 信息: \n名称: %s\n命名空间: %s\n状态: %s\nPod 的 CPU: %s\nPod 的 Memory: %s\n", 
+	    pod.Name, pod.Namespace, pod.Status, pod.CPU, pod.Memory)
 
 
 	// 场景2：结构体生成 JSON 字符串（类比 Shell 的 echo '{"name":"xxx"}'）
